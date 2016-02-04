@@ -39,18 +39,20 @@ instance=prod
 scriptdir=`dirname $0`
 
 # Path to Parameters File for silent/unattended install
-parametersFile=/root/VistA-installation-scripts/Cache/parameters.isc
+parametersFile=/vagrant/Cache/parameters.isc
 
 # CacheHome
 CacheHome=/opt/cachesys/$instance
 
 # unzip the cachekit in a temp directory
-cachekit=/root/cache-2011.1.2.701-lnxrh5x64.tar.gz
-tempdir=/tmp/cachekit2011.1.2.701
+# cache-2011.1.2.701-lnxrh5x64.tar.gz
+cachekit=/vagrant/Cache/installer/cache-2015.2.2.805.0su-lnxrhx64.tar.gz
+tempdir=/tmp/cachekit2015.2.2.805
 mkdir $tempdir
 chmod og+rx $tempdir
 cd $tempdir
 tar xzf $cachekit
+# sudo chown -R vagrant /tmp/*
 
 # Install Caché using the installFromParametersFile command
 # This is how silent/automated installs work for *nix platforms

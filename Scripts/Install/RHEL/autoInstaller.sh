@@ -31,14 +31,14 @@ usage()
     cat << EOF
     usage: $0 options
 
-    This script will automatically create a VistA instance for GT.M on
+    This script will automatically create a VistA instance for Caché on
     RHEL-like Distros
 
     DEFAULTS:
       Alternate VistA-M repo = https://github.com/OSEHRA/VistA-M.git
-      Install EWD.js = false
+      Install EWD.js = true
       Create Development Directories = false
-      Instance Name = OSEHRA
+      Instance Name = CACHEINV
       Post Install hook = none
       Skip Testing = false
 
@@ -102,7 +102,7 @@ if [[ -z $developmentDirectories ]]; then
 fi
 
 if [[ -z $installEWD ]]; then
-    installEWD=false
+    installEWD=true
 fi
 
 if [[ -z $installgtm ]]; then
@@ -110,7 +110,7 @@ if [[ -z $installgtm ]]; then
 fi
 
 if [[ -z $instance ]]; then
-    instance=osehra
+    instance=cacheinv
 fi
 
 if [[ -z $postInstall ]]; then
@@ -122,7 +122,7 @@ if [ -z $skipTests ]; then
 fi
 
 if [ -z $cacheinstallerpath ]; then
-    cacheinstallerpath=false;
+    cacheinstallerpath=/vagrant/Cache/installer/cache-2015.2.2.805.0su-lnxrhx64.tar.gz
 fi
 
 # Quit if no M environment viable
@@ -284,3 +284,4 @@ fi
 
 # Ensure group permissions are correct
 chmod -R g+rw /home/$instance
+

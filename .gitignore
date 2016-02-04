@@ -1,6 +1,13 @@
 # Do not add ExternalData store or staging files
 .ExternalData*
 
+# Cache installer files
+Scripts/Install/Cache/installer
+
+# vagrant
+Scripts/Install/RHEL/.vagrant
+
+
 # Python compiled sources
 *.pyc
 
