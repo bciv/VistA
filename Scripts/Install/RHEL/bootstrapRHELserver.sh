@@ -22,7 +22,9 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Update the server from repositories
-yum update -y > /dev/null
+yum update -y 
+# > /dev/null
 
 # Install baseline packages
-yum install -y git xinetd perl wget curl python openssh-server expect man mysql mysql-server python-argparse sshpass > /dev/null
+yum install -y git vim xinetd perl wget curl python openssh-server expect man mysql mysql-server python-argparse sshpass 
+#> /dev/null

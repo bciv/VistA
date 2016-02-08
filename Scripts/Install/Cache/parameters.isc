@@ -1,6 +1,6 @@
 
-legacy_dist.source_dir: /tmp/cachekit2011.1.2.701/package/legacy_dist/../..
-product_info.version: 2011.1.2.701.0
+legacy_dist.source_dir: /tmp/cachekit2015.2.2.805/package/legacy_dist/../..
+product_info.version: 2015.2.2.805.0
 product_info.name: Cache
 platform_selection.platform: lnxrh5x64
 platform_selection.platform_family: lnxrh5x64
@@ -21,7 +21,7 @@ server_location.instance_name: prod
 server_location.is_new_install: Y
 server_location.registry_dir: /usr/local/etc/cachesys
 server_location.convert_ensemble_registry:
-server_location.ccontrol: /tmp/cachekit2011.1.2.701/package/legacy_dist/../../dist/Cache/bin/lnxrh5x64/shared/ccontrol
+server_location.ccontrol: /tmp/cachekit2015.2.2.805/package/legacy_dist/../../dist/Cache/bin/lnxrh5x64/shared/ccontrol
 postinstall: upgrade
 install_mode.setup_type: Server
 unicode_selection.binary_type: eightbit
@@ -35,7 +35,7 @@ security_settings.initial_level: Locked Down
 security_settings.already_secured: N
 security_settings.password: cacheprod!
 installer.manifest:
-installer.manifest_parameters: SourceDir=/tmp/cachekit2011.1.2.701/package/legacy_dist/../..,ISCUpgrade=0,
+installer.manifest_parameters: SourceDir=/tmp/cachekit2015.2.2.805/package/legacy_dist/../..,ISCUpgrade=0,
 manager_source_code.available: Y
 port_selection.superserver_port: 1972
 port_selection.webserver_port: 57772
