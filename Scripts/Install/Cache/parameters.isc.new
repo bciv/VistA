@@ -1,13 +1,11 @@
 
-dist.source_dir: /tmp/cachekit2015.2.2.805
+legacy_dist.source_dir: /tmp/cachekit2015.2.2.805/dist
 product_info.version: 2015.2.2.805.0
 product_info.name: Cache
-platform_selection.platform: lnxrhx86
-platform_selection.platform_family: lnxrhx86
+platform_selection.platform: lnxrh5x86
+platform_selection.platform_family: lnxrh5x86
 platform_selection.endianness: little
 platform_selection.os: Linux
-posix_tools.permission: 764
-posix_tools.dir_permission: 766
 posix_tools.user_add: /usr/sbin/useradd
 posix_tools.group_add: /usr/sbin/groupadd
 posix_tools.grep: grep
@@ -36,9 +34,8 @@ security_settings.personal_database:
 security_settings.initial_level: Locked Down
 security_settings.already_secured: N
 security_settings.password: cacheprod!
-security_settings.csppassword: cacheprod!
 installer.manifest:
-installer.manifest_parameters: SourceDir=/tmp/cachekit2015.2.2.805,ISCUpgrade=0,
+installer.manifest_parameters: SourceDir=/tmp/cachekit2015.2.2.805/dist,ISCUpgrade=0,
 manager_source_code.available: Y
 port_selection.superserver_port: 1972
 port_selection.webserver_port: 57772
